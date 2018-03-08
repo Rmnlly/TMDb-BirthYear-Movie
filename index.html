@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+        <link rel="stylesheet" href="main.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="app.js"></script>
+        <title>Movie of your year</title>
+    </head>
+    <body>
+        <section class="hero is-dark is-small">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-1">Birth Year Movie</h1>
+                    <h2 class="subtitle">The movie with the highest revenue from your birth year</h2>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-header-title">
+                            <label>Birth Year: </label>
+                            <input id="year"  min="1990" max="2018" pattern="\d*" maxlength="4">
+                            <input id="submit" type="submit" name="" value="submit">
+                        </div>
+                    </div>
+                    <div class="movie-name has-text-black is-size-5 has-text-centered">
+                        <p id="movie"></p>
+                    </div>
+                    <div class="movie-image card-image">
+                        <figure class="image is-3by4">
+                            <img class="movie-poster"></img>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="attribution">
+            <div class="inside">
+                <p>This product uses the TMDb API but is not endorsed or certified by TMDb.</p>
+                <img class="attribution-image" src="https://www.themoviedb.org/static_cache/v4/logos/208x226-stacked-green-9484383bd9853615c113f020def5cbe27f6d08a84ff834f41371f223ebad4a3c.png">
+            </div>
+        </div>
+    </body>
+</html>
