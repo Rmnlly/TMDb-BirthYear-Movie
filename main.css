@@ -42,3 +42,7 @@ label {
 input {
     margin: 5px;
 }
+
+.centered {
+    text-align: center;
+}
